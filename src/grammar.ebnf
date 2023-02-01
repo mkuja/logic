@@ -4,9 +4,9 @@ SYM     ::= "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H"
         |   "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X"
         |   "Y" | "Z" | "O";
 OP      ::= "and" | "xor" | "or";
-unary   ::= "!" expr
+unary   ::= "!" OP
         |   "!" parens
-        |   "~" expr
+        |   "~" OP
         |   "~" parens;
 expr    ::= SYM
         |   SYM OP expr;
